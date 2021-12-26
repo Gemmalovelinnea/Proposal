@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>點小圖秀大圖</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrap {
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: white;
+            height: 80px;
+            top: 0;
+            width: 100%;
+            position: fixed;
+            box-shadow: 0 8px 6px -6px lightgrey;
+            z-index: 5;
+        }
+
+        .logo {
+            margin-top: 10px;
+            margin-right: 95px;
+        }
+
+        .logo img {
+            width: 180px;
+        }
+
+        ul {
+            float: right;
+            margin-top: 20px;
+        }
+
+        ul li {
+            float: left;
+            margin-right: 20px;
+            list-style-type: none;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        ul li a {
+            color: black;
+            text-decoration: none;
+        }
+
+
+        .list-of-donate {
+            color: coral;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .pet_adoption {
+            font-size: 60px;
+            padding: 100px;
+            text-align: center;
+        }
+
+        .adoption_information {
+            padding-top: 100px;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .up {
+            width: 1200px;
+            height: 1200px;
+            margin: auto;
+            display: flex;
+            padding-top: 30px;
+        }
+
+        .picture {
+            width: 800px;
+        }
+
+        #large {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .small {
+            width: 125px;
+            height: 166px;
+            display: flex;
+            padding-right: 20px;
+            justify-content: space-between;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+
+        .brief_content p {
+            font-size: 20px;
+            padding-top: 10px;
+            line-height: 30px;
+        }
+
+        .brief_content {
+            width: 500px;
+            margin-left: 50px;
+        }
+
+        .brief_content h3 {
+            font-size: 30px;
+        }
+
+        .space {
+            height: 20px;
+        }
+
+        .footer {
+            background-color: beige;
+            box-shadow: 0 10px 8px 20px lightgrey;
+            padding: 20px;
+            height: 100px;
+        }
+
+        .contact {
+            top: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <a href="special.html" class="logo"><img src="DOG.jpg" alt=""></a>
+            <ul>
+                <li><a href="special_dog_adoption.html">寵物認養</a></li>
+                <li><a href="participate_us.html">參與我們</a></li>
+                <li><a href="special.html#donation_mode" class="list-of-donate">捐款</a></li>
+            </ul>
+        </div>
+        <div class="adoption_information">領養資訊</div>
+        <div class="up">
+            <div class="picture">
+                <div>
+                    <img id="large" src="shiba_inu.jpg">
+                </div>
+                <div class="small">
+                    <img src="shiba_inu.jpg" class="small" />
+                    <img src="small.jpg" class="small" />
+                </div>
+            </div>
+            <div class="brief_content">
+                <h1>牛牛</h1>
+                <p>品種：柴犬</p>
+                <p>種類：狗</p>
+                <p>性別：母</p>
+                <p>體型：中型</p>
+                <p>毛色：赤帶黑</p>
+                <p>年紀：成年</p>
+                <p>結紮：已結紮</p>
+                <p>所在地：桃園市 大園區</p>
+                <p>個性：膽小，親人不親狗(很害怕狗，但會想聞對方認識)
+                </p>
+                <p>已學會指令：坐下 、趴下、握手、ㄅㄧㄤˋ(翻肚裝死)、GO HOME(回籠子)
+                </p>
+                <p>晶片：有
+                </p>
+                <p>驅蟲：每個月固定吃全能狗S
+                </p>
+                <p>注意事項：
+                </p>
+                <p>1. 皮膚狀況不好，環境潮濕或不乾淨容易過敏，目前有打止癢針皮膚狀況正常。</p>
+                <p>2. 有訓練定點尿尿(廁所的尿盆)，但他比較喜歡在戶外草皮上廁所，如果遇到下雨天無法出門憋不住才會在家上(尿尿憋一天 、便便會憋兩天)
+                    也有做籠內訓練，每天晚上會回籠子休息。</p>
+                <div class="space"></div>
+                <h3>聯絡人: 李小姐 </h3>
+                <h3>聯絡電話: 091234567 </h3>
+            </div>
+        </div>
+        <div class="footer">
+            <h3 class="contact">聯絡我們: </h3>
+            <p>地址:台北市大安區師大路1號1樓</p>
+            <p>電話:091234567</p>
+            <p>email:lisa0821@gmail.com</p>
+        </div>
+    </div>
+    <script>
+        function showLarge(e) {
+            let small = e.target;
+            document.getElementById("large").src = small.src;
+        }
+
+        function init() {
+            let smalls = document.getElementsByClassName("small");
+            for (let i = 0; i < smalls.length; i++) {
+                smalls[i].onclick = showLarge;
+            }
+        }
+
+        window.addEventListener("load", init, false);
+    </script>
+</body>
+
+</html>
+
+</html>

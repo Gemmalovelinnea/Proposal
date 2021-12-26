@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrap {
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: white;
+            height: 80px;
+            top: 0;
+            width: 100%;
+            position: fixed;
+            box-shadow: 0 8px 6px -6px lightgrey;
+            z-index: 5;
+        }
+
+        .logo {
+            margin-right: 95px;
+        }
+
+        .logo img {
+            width: 180px;
+        }
+
+        .header ul {
+            float: right;
+            margin-top: 20px;
+        }
+
+        .header ul li {
+            float: left;
+            margin-right: 20px;
+            list-style-type: none;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .header ul li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .header ul li .list-of-donate {
+            color: coral;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        h1 {
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        form {
+            width: 1200px;
+            height: 800px;
+            margin: auto;
+        }
+
+        h3 {
+            font-size: 25px;
+            text-align: center;
+            background-color: #FFE5B4;
+            width: 460px;
+            margin: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .volunteer_form {
+            width: 380px;
+            background-color: #FFE5B4;
+            margin: auto;
+            line-height: 30px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 40px;
+        }
+
+        .blank {
+            height: 10px;
+            float: right;
+        }
+
+        .submit {
+            text-decoration: none;
+            border: brown solid 2px;
+            background-color: brown;
+            color: white;
+            padding: 3px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <a href="special.html" class="logo"><img src="DOG.jpg" alt=""></a>
+            <ul>
+                <li><a href="special_dog_adoption.html">寵物認養</a></li>
+                <li><a href="participate_us.html">參與我們</a></li>
+                <li><a href="special.html#donation_mode" class="list-of-donate">捐款</a></li>
+            </ul>
+        </div>
+        <h1>參與我們</h1>
+        <form>
+            <div id="title">
+                <h3>志工群報名表</h3>
+            </div>
+            <div class="volunteer_form">
+                <ul>
+                    <li>
+                        <span>姓名</span>
+                        <span class="blank">
+                            <input name="name" type="text" value="">
+                        </span>
+                    </li>
+                    <li>
+                        <span>生日</span>
+                        <span class="blank">
+                            <input name="birthday" type="text" value="" placeholder="範例﹔1980-01-01">
+                        </span>
+                    </li>
+                    <li>
+                        <span>性別</span>
+                        <span>
+                            <input name="gender" type="radio" value="yes" id="male" checked=""><label
+                                for="male">男</label>
+                            <input name="gender" type="radio" value="no" id="female"><label for="female">女</label>
+                        </span>
+                    </li>
+                    <li>
+                        <span>通訊地址</span>
+                        <span class="blank">
+                            <input name="address" type="text" class="full" value="">
+                        </span>
+                    </li>
+                    <li>
+                        <span>電子郵件</span>
+                        <span class="blank">
+                            <input name="email" type="text" class="full" value="">
+                        </span>
+                    </li>
+                    <li>
+                        <span>聯絡電話</span>
+                        <span class="blank">
+                            <input name="tel" type="text" maxlength="11">
+                        </span>
+                    </li>
+                </ul>
+                <a class="submit" onclick="submitForm();">確認送出</a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function submitForm() {
+            alert("資料已送出");
+        }
+    </script>
+</body>
+
+</html>

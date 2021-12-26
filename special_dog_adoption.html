@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrap {
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: white;
+            height: 80px;
+            top: 0;
+            width: 100%;
+            position: fixed;
+            box-shadow: 0 8px 6px -6px lightgrey;
+            z-index: 5;
+        }
+
+        .logo {
+            margin-right: 95px;
+        }
+
+        .logo img {
+            width: 180px;
+        }
+
+        ul {
+            float: right;
+            margin-top: 20px;
+        }
+
+        ul li {
+            float: left;
+            margin-right: 20px;
+            list-style-type: none;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        ul li a {
+            color: black;
+            text-decoration: none;
+        }
+
+
+        .list-of-donate {
+            color: coral;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .pet_adoption {
+            font-size: 40px;
+            padding: 100px;
+            text-align: center;
+        }
+
+        .content {
+            width: 1200px;
+            margin: auto;
+            margin-top:-50px;
+        }
+
+        .choice {
+            height: 335px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .dog_type {
+            width: 570px;
+            height: 333px;
+            box-sizing: border-box;
+            display: flex;
+            background-color: #FFE5B4;
+            border-radius: 10px;
+        }
+
+        .dog_type_picture img {
+            width: 250px;
+            height: 333px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .dog_type_description {
+            width: 300px;
+            height: 100px;
+            margin-left: 30px;
+            margin-top: 30px;
+            padding: 10px;
+            line-height: 30px;
+        }
+
+        .name {
+            font-size: 30px;
+            padding: 10px;
+            margin-left: -10px;
+        }
+
+        .donation_button {
+            margin-top: 20px;
+            padding: 10px;
+            right: 10px;
+            width: 100px;
+            border-radius: 5px;
+            padding: 15px 20px;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+            margin: 10px;
+            color: #fff;
+            border: orangered;
+            position: relative;
+            display: inline-block;
+            background-color: #e67e22;
+            box-shadow: 0px 5px 0px 0px #CD6509;
+        }
+
+        .donation_button:hover {
+            color: yellow;
+        }
+
+        .dog_type_description {
+            width: 300px;
+            height: 100px;
+            margin-left: 30px;
+            margin-top: 30px;
+            padding: 10px;
+            line-height: 30px;
+        }
+
+        .space {
+            margin: 30px;
+        }
+
+        .footer {
+            background-color: beige;
+            box-shadow: 0 10px 8px 20px lightgrey;
+            padding: 20px;
+            height:60px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <a href="special.html" class="logo"><img src="DOG.jpg" alt=""></a>
+            <ul>
+                <li><a href="special_dog_adoption.html">寵物認養</a></li>
+                <li><a href="participate_us.html">參與我們</a></li>
+                <li><a href="special.html#donation_mode" class="list-of-donate">捐款</a></li>
+            </ul>
+        </div>
+        <div class="pet_adoption">寵物認養</div>
+        <div class="content">
+            <div class="choice">
+                <div class="dog_type">
+                    <div class="dog_type_picture">
+                        <img src="shiba_inu.jpg" alt="">
+                    </div>
+                    <div class="dog_type_description">
+                        <h3 class="name">牛牛</h3>
+                        <p>品種:柴犬</p>
+                        <p>年齡:3歲</p>
+                        <p>地區:台北市</p>
+                        <p>個性：膽小，親人不親狗(很害怕狗，但會想聞對方認識)</p>
+                        <input type="button" value="了解更多" class="donation_button" onclick="location.href='unique.html'">
+                    </div>
+                </div>
+                <div class="dog_type">
+                    <div class="dog_type_picture">
+                        <img src="shiba_inu.jpg" alt="">
+                    </div>
+                    <div class="dog_type_description">
+                        <h3 class="name">牛牛</h3>
+                        <p>品種:柴犬</p>
+                        <p>年齡:3歲</p>
+                        <p>地區:台北市</p>
+                        <p>個性：膽小，親人不親狗(很害怕狗，但會想聞對方認識)</p>
+                        <input type="button" value="了解更多" class="donation_button" onclick="location.href='unique.html'">
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="choice">
+                <div class="dog_type">
+                    <div class="dog_type_picture">
+                        <img src="husky.jpeg" alt="">
+                    </div>
+                    <div class="dog_type_description">
+                        <h3 class="name">月月</h3>
+                        <p>品種:哈士奇</p>
+                        <p>年齡:1歲</p>
+                        <p>地區:新北市</p>
+                        <p>個性：親人、親狗、散步會突然暴衝</p>
+                        <input type="button" value="了解更多" class="donation_button" onclick="location.href='unique.html'">
+                    </div>
+                </div>
+                <div class="dog_type">
+                    <div class="dog_type_picture">
+                        <img src="husky.jpeg" alt="">
+                    </div>
+                    <div class="dog_type_description">
+                        <h3 class="name">月月</h3>
+                        <p>品種:哈士奇</p>
+                        <p>年齡:1歲</p>
+                        <p>地區:新北市</p>
+                        <p>個性：親人、親狗、散步會突然暴衝</p>
+                        <input type="button" value="了解更多" class="donation_button" onclick="location.href='unique.html'">
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="choice">
+                <div class="dog_type">
+                    <div class="dog_type_picture">
+                        <img src="poodie.jpeg" alt="">
+                    </div>
+                    <div class="dog_type_description">
+                        <h3 class="name">Bailey</h3>
+                        <p>品種:貴賓狗</p>
+                        <p>年齡:6歲</p>
+                        <p>地區:桃園</p>
+                        <p>個性：會坐下、握手、定點大小便、不咬人</p>
+                        <input type="button" value="了解更多" class="donation_button" onclick="location.href='unique.html'">
+                    </div>
+                </div>
+                <div class="dog_type">
+                    <div class="dog_type_picture">
+                        <img src="poodie.jpeg" alt="">
+                    </div>
+                    <div class="dog_type_description">
+                        <h3 class="name">Bailey</h3>
+                        <p>品種:貴賓狗</p>
+                        <p>年齡:6歲</p>
+                        <p>地區:桃園</p>
+                        <p>個性：會坐下、握手、定點大小便、不咬人</p>
+                        <input type="button" value="了解更多" class="donation_button" onclick="location.href='unique.html'">
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+            <div class="choice">
+                <div class="dog_type">
+                    <div class="dog_type_picture">
+                        <img src="tongue.jpg" alt="">
+                    </div>
+                    <div class="dog_type_description">
+                        <h3 class="name">Golfy</h3>
+                        <p>品種:米克斯</p>
+                        <p>年齡:2歲</p>
+                        <p>地區:桃園</p>
+                        <p>個性：個性溫和又黏人，學過握手，成功率70%。</p>
+                        <input type="button" value="了解更多" class="donation_button" onclick="location.href='unique.html'">
+                    </div>
+                </div>
+                <div class="dog_type">
+                    <div class="dog_type_picture">
+                        <img src="tongue.jpg" alt="">
+                    </div>
+                    <div class="dog_type_description">
+                        <h3 class="name">Golfy</h3>
+                        <p>品種:米克斯</p>
+                        <p>年齡:2歲</p>
+                        <p>地區:桃園</p>
+                        <p>個性：個性溫和又黏人，學過握手，成功率70%。</p>
+                        <input type="button" value="了解更多" class="donation_button" onclick="location.href='unique.html'">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space"></div>
+        <div class="footer">
+            <h3 class="contact">聯絡我們: </h3>
+            <p>地址:台北市大安區師大路1號1樓</p>
+            <p>電話:091234567</p>
+            <p>email:lisa0821@gmail.com</p>
+        </div>
+    </div>
+</body>
+
+</html>
