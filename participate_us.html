@@ -60,21 +60,22 @@
 
         h1 {
             margin-top: 100px;
+            margin-bottom: 15px;
             text-align: center;
         }
 
         form {
             width: 1200px;
-            height: 800px;
             margin: auto;
         }
 
-        h3 {
+        form h3 {
             font-size: 25px;
             text-align: center;
             background-color: #FFE5B4;
             width: 460px;
             margin: auto;
+            padding-top: 10px;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
         }
@@ -102,6 +103,21 @@
             padding: 3px;
             border-radius: 3px;
         }
+
+        .gap_80 {
+            height: 100px;
+        }
+
+        .p_space {
+            height: 20px;
+        }
+
+        .footer {
+            background-color: beige;
+            box-shadow: 0 10px 8px 20px lightgrey;
+            padding: 20px;
+            font-size: 15px;
+        }
     </style>
 </head>
 
@@ -117,9 +133,7 @@
         </div>
         <h1>參與我們</h1>
         <form>
-            <div id="title">
-                <h3>志工群報名表</h3>
-            </div>
+            <h3>志工群報名表</h3>
             <div class="volunteer_form">
                 <ul>
                     <li>
@@ -164,6 +178,16 @@
                 <a class="submit" onclick="submitForm();">確認送出</a>
             </div>
         </form>
+        <div class="gap_80"></div>
+        <div class="footer">
+            <h3 class="contact">聯絡我們: </h3>
+            <p>地址:台北市大安區師大路1號1樓</p>
+            <p>電話:091234567</p>
+            <p>email:lisa0821@gmail.com</p>
+            <p class="p_space"> </p>
+            <p>此網頁僅供TibaMe專題教學使用</p>
+            <p>©All Rights Reserved</p>
+        </div>
     </div>
 
     <script>
